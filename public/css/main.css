@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuentePag);
+  }
+  body{
+    font-family: var(--fuentePag);
+  }
+:root {
+    --dorado: #c6aa58;
+    --blancoNatural: #fff;
+    --crema: #f6f4ef;
+    --fuentePag: 'Barlow', sans-serif;
+}
+  .menu {
+    background: black;
+    max-width: 1920px;
+    width: 100%;
+    color: white;
+    display: flex;
+    padding-left: 20px;
+    font-size: 25px;
+    max-height: 200px;
+    height: 100%;
+    /*el position sticky se va a determinar por el top si esta en 0 se va a quedar en el tope de la ventana en este  caso al bajar el menu se va a quedar */
+    position: static;
+    opacity: .8;
+  }
+  .logo {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 600;
+    position: relative;
+    color: var(--dorado);
+  }
+  .cabecera{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 100vh;
+    height: 1080px;
+    background:black;
+    background: url(../img/por-que-fly-select-square.webp);
+    background-repeat: no-repeat;
+    background-size:100% 100%; /*ocupa todo el tamaño de la cajita*/
+    background-position: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    opacity: .9;
+    /*background-attachment: fixed;*/
+}
+.cabecera__contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--blancoNatural);
+    /*padding-top:20%;*/
+}
+.cabecera__text1{
+    color: var(--blancoNatural);
+}
+.cabecera__text2{
+    color: var(--dorado);
+}
+/*seccion 2, viaje de negocios o de placer*/
+.separador{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 100px;
+    background: url(../img/separador.png);
+    background-size: cover;
+}
+.cabecera2{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    /*background: red;*/
+    background-size:cover;
+    background-position: center;
+    text-align: right;
+    box-shadow:  0px -10px 30px #4444 inset;
+}
+.cabecera__contenedor2{
+    position: absolute;
+    margin: 30px 140px;
+    width: 80%;
+    height: 90%;
+    /*background: green;*/
+}
+
+.cabecera2__escrito{
+    position: relative;
+   /*background: blue;*/
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.cabecera2__titulo{
+    position: absolute;
+   /* background: hotpink;*/
+    text-align: center;
+    font-size: 2em;
+    color: var(--dorado);
+    top: 10%;
+    left: 15%;
+}
+.span1{
+  /* background: pink;*/
+    position: absolute;
+    color:black;
+    left: 0px;
+}
+.cabecera2__texto{
+    color: grey;
+    position: absolute;
+    text-align: left;
+    /*background: blue;*/
+    font-size: 1em;
+    top: 35%;
+    left: 15%;
+}
+.cabecera2_boton{
+    position: absolute;
+    text-align: center;
+    /*background: green;*/
+    font-size: 1em;
+    background: var(--dorado);
+    color: white;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 20px;
+    left: 15%;
+    margin-top: 75%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.img1 {
+ max-width: 100%;
+ max-height: 100%;
+ border-radius: 30px;
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.cabecera2_contenedor_imagen{
+    /*background: yellow;*/
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;   
+}
+/*seccion 3, "porque fly select*/
+.cabecera3{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    background: var(--crema);
+    background-size:cover;
+    background-position: center;
+}
+.cabecera__contenedor3{
+    position: absolute;
+    margin: 3% 10%;
+    width: 80%;
+    height: 90%;
+    /*background: green;*/
+}
+.cabecera3__escrito{
+    position: relative;
+    /*background: blue;*/
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.cabecera3__titulo{
+    position: absolute;
+    /*background: hotpink;*/
+    text-align: left;
+    font-size: 2em;
+    color: black;
+    margin-top: 12%;
+    margin-left: 5%;
+}
+.span2{
+    position: relative;
+    color: var(--dorado);
+    /*background: green;*/
+}
+.cabecera3__texto{
+    width: 85%;
+    position: absolute;
+    text-align: left;
+    /*background: blue;*/
+    font-size: 1em;
+    color: gray;
+    margin-top: 33%;
+    margin-left: 5%;
+}
+.cabecera3_boton{
+    text-align: center;
+    font-size: 1em;
+    background: var(--dorado);
+    color: white;
+    display: inline-block;
+    padding: 10px 35px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-top: 67%;
+    margin-left: 30%;
+}
+.img1 {
+ max-width: 100%;
+ max-height: 100%;
+ border-radius: 30px;
+ box-shadow: 10px;
+}
+.cabecera3_contenedor_imagen{
+    /*background: yellow;*/
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.separador2{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 100px;
+    background: url(../img/separador2.png);
+    background-size: cover;
+}
+/*seccion 4*/
+.cabecera4{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 90vh;
+    height: 100vh;
+    background: black;
+    position: relative;
+}
+.img4{
+    position: absolute;
+    opacity: .5;
+    max-width: 1920px;
+    width: 100%;
+    max-height:90vh;
+}
+.cabecera4__escrito{
+    position: absolute;
+    background: var(--blancoNatural);
+    text-align: center;
+    max-width: 1920px;
+    width: 100%;
+    bottom: 0px;
+    max-height: 30vh;
+    height: 100vh;
+}
+.cabecera4__texto{
+    font-size: 1em;
+    position: absolute;
+    left: 12.5%;
+    top: 20%;
+    color: gray;
+    /*background: red;*/
+    max-height: 123px;
+    width: 75%;
+    text-align: left;
+}
+.separador3{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 100px;
+    background: url(../img/separador3.png);
+    background-size: cover;
+    box-shadow:  0px -10px 30px #4444;
+}
+/*Seccion 5, Nuestra recomendación*/
+.cabecera5{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 50vh;
+    height: 50vh;
+    /*background: red;*/
+    background-size:cover;
+    background-position: center;
+    text-align: right;
+    position: relative;
+}
+.cabecera__contenedor5{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+ /*   background: green;*/
+}
+
+.cabecera5__escrito{
+    position: relative;
+    /*background: blue;*/
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.cabecera5__titulo{
+    color: black;
+    position: absolute;
+    width: 85%;
+    text-align: center;
+    /*background: hotpink;*/
+    font-size: 1.8em;
+    top: 10%;
+    left: 15%;
+}
+.RP{
+    /*background: red;*/
+    text-align: left;
+    top: 10%;
+    left: 15%;
+    text-align: right;
+}
+.cabecera5__texto{
+    color: grey;
+    position: absolute;
+    text-align: left;
+   /* background: violet;*/
+    font-size: 1em;
+    top: 30%;
+    left: 15%;
+}
+.cabecera5_boton{
+    text-align: center;
+    /*background: green;*/
+    font-size: 1em;
+    background: var(--dorado);
+    color: white;
+    display: inline-block;
+    padding: 15px 25px;
+    position: absolute;
+    border-radius: 20px;
+    left: 40%;
+    top: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.cabecera5_contenedor_imagen{
+    /*background: yellow;*/
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.img5{
+    max-width: 100%;
+    max-height: 100%;
+   }
+.separadorFAQ{
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    height: 100px;
+    background: url(../img/separadorFAQ.png);
+    background-size: cover;
+}
+/*seccion 6, preguntas frecuentes*/
+.cabecera6{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 50vh;
+    height: 50vh;
+    /*background: red;*/
+    background-size:cover;
+    background-position: center;
+    text-align: right;
+    position: relative;
+}
+.cabecera__contenedor6{
+    position: absolute;
+    left: 3%;
+    width: 95%;
+    height: 100%;
+    /*background: green;*/
+}
+.cabecera6__escrito{
+    position: absolute;
+    /*background: pink;*/
+    width: 50%;
+    height: 100%;
+    float:left;
+}
+.cabecera6__escrito3{
+    position: absolute;
+    /*background: pink;*/
+    width: 50%;
+    height: 100%;
+    float:left;
+    bottom: 4%;
+}
+.cabecera6__titulo{
+    width: 85%;
+    position: absolute;
+    background:var(--crema) ;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    top: 10%;
+    left: 10%;
+    border: outset 0.5px var(--crema);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+.cabecera6__titulo2{
+    width: 85%;
+    position: absolute;
+    background:var(--crema) ;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+   /*top: 10%;*/
+    left: 10%;
+    border: outset 0.5px var(--crema);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+.cabecera6__texto{
+    color: grey;
+    position: absolute;
+    width: 85%;
+    text-align: left;
+    /*background: blue;*/
+    font-size: 1.2em;
+    top: 30%;
+    left: 10%;
+}
+.cabecera6__contenedor__imagen{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0%;
+    /*background: yellow;*/
+}
+.img6{
+    position: absolute;
+    max-width: 90%;
+    max-height: 100%;
+    right: 10%;
+    top: 10%;
+}
+.img62{
+    position: absolute;
+    max-width: 90%;
+    max-height: 100%;
+    right: 10%;
+}
+.img63{
+    position: absolute;
+    max-width: 90%;
+    max-height: 100%;
+    right: 10%;
+    top: -5%;
+}
+/*pie de pagina*/
+.pie__pagina{
+    position: relative;
+    background: black;
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    max-height: 100%;
+    height: 300px;
+}
+.titulo__pie{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: black ;
+    color: var(--dorado);
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+    opacity: .8;
+}
+.columnas__pie{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 30%;
+    color: white;
+    background: black;   
+}
+.columna1{
+    list-style: none;
+    font-size: .8em;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background:black;
+    color: white;
+    padding-top: 2%;
+    padding-left: 35%;
+    opacity: .8;
+}
+.columna2{
+    list-style: none;
+    font-size: .9em;
+    text-align: left;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background:black;
+    color: white;
+    right: 0%;
+    padding-top: 2%;
+    padding-left:5%;
+    opacity: .8;
+}
